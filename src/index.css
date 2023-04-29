@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
-
 @layer base {
 	:root {
 		--bg-main: hsl(222, 26%, 31%);
 		--bg-toggle: hsl(223, 31%, 20%);
 		--bg-screen: hsl(224, 36%, 15%);
 
-		--key-bg: hsl(30, 25%, 89%);
-		--key-shadow: hsl(28, 16%, 65%);
+		--key-base-bg: hsl(30, 25%, 89%);
+		--key-base-shadow: hsl(28, 16%, 65%);
 
 		--key-pr-bg: hsl(225, 21%, 49%);
 		--key-pr-shadow: hsl(224, 28%, 35%);
@@ -19,8 +17,10 @@
 		--key-acc-bg: hsl(6, 63%, 50%);
 		--key-acc-shadow: hsl(6, 70%, 34%);
 
-		--base: hsl(221, 14%, 31%);
+		--clr-base: hsl(221, 14%, 31%);
 		--inverted: hsl(0, 0%, 100%);
+		--clr-solve: hsl(0, 0%, 100%);
+		--clr-screen: hsl(0, 0%, 100%);
 
 		--ff-primary: 'League Spartan', sans-serif;
 	}
@@ -30,8 +30,8 @@
 		--bg-toggle: hsl(0, 5%, 81%);
 		--bg-screen: hsl(0, 0%, 93%);
 
-		--key-bg: hsl(45, 7%, 89%);
-		--key-shadow: hsl(35, 11%, 61%);
+		--key-base-bg: hsl(45, 7%, 89%);
+		--key-base-shadow: hsl(35, 11%, 61%);
 
 		--key-pr-bg: hsl(185, 42%, 37%);
 		--key-pr-shadow: hsl(185, 58%, 25%);
@@ -39,8 +39,10 @@
 		--key-acc-bg: hsl(25, 98%, 40%);
 		--key-acc-shadow: hsl(25, 99%, 27%);
 
-		--base: hsl(60, 10%, 19%);
+		--clr-base: hsl(60, 10%, 19%);
 		--inverted: hsl(0, 0%, 100%);
+		--clr-solve: hsl(0, 0%, 100%);
+		--clr-screen: hsl(60, 10%, 19%);
 	}
 
 	.theme-3 {
@@ -48,8 +50,8 @@
 		--bg-toggle: hsl(268, 71%, 12%);
 		--bg-screen: hsl(268, 71%, 12%);
 
-		--key-bg: hsl(268, 47%, 21%);
-		--key-shadow: hsl(290, 70%, 36%);
+		--key-base-bg: hsl(268, 47%, 21%);
+		--key-base-shadow: hsl(290, 70%, 36%);
 
 		--key-pr-bg: hsl(281, 89%, 26%);
 		--key-pr-shadow: hsl(285, 91%, 52%);
@@ -57,7 +59,17 @@
 		--key-acc-bg: hsl(176, 100%, 44%);
 		--key-acc-shadow: hsl(177, 92%, 70%);
 
-		--base: hsl(52, 100%, 62%);
+		--clr-base: hsl(52, 100%, 62%);
+		--clr-screen: hsl(52, 100%, 62%);
 		--inverted: hsl(0, 0%, 100%);
+		--clr-solve: hsl(198, 20%, 13%);
+	}
+}
+
+@layer base {
+	html,
+	body,
+	#root {
+		height: 100%;
 	}
 }
